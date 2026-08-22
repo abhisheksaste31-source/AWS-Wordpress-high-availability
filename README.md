@@ -161,11 +161,39 @@ After successful testing and validation, the Green environment can become the pr
 
 [RDS Blue/Green Deployment Documentation](rds/rds-blue-green-deployment.md)
 
-### Screenshot
+## 📸 Project Screenshots
 
-![RDS Blue/Green Deployment](screenshots/rds-blue-green.png)
+### 🖥️ EC2 Instances
 
----
+![EC2 Instances](screenshots/ec2.png)
+
+### ⚖️ Application Load Balancer
+
+![Application Load Balancer](screenshots/alb.png)
+
+### 🎯 Target Group
+
+![Target Group](screenshots/target-group.png)
+
+### 📈 Auto Scaling Group
+
+![Auto Scaling Group](screenshots/autoscaling.png)
+
+### 🗄️ Amazon RDS MySQL
+
+![Amazon RDS MySQL](screenshots/rds.png)
+
+### 🌐 Route 53
+
+![Route 53](screenshots/route53.png)
+
+### 🔐 AWS Certificate Manager
+
+![AWS Certificate Manager](screenshots/acm.png)
+
+### 🌍 WordPress Website
+
+![WordPress Website](screenshots/wordpress.png)
 
 ## 🌐 Route 53
 
