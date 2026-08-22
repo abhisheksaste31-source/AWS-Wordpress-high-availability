@@ -183,6 +183,11 @@ After successful testing and validation, the Green environment can become the pr
 
 ![Amazon RDS MySQL](screenshots/rds.png)
 
+### 🔄 RDS Blue/Green Deployment
+
+![RDS Blue/Green Deployment](screenshots/rds-blue-green.png)
+
+
 ### 🌐 Route 53
 
 ![Route 53](screenshots/route53.png)
