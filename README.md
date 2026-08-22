@@ -2,7 +2,7 @@
 
 A highly available and scalable WordPress website hosted on AWS using a **LAMP stack**, **Amazon EC2**, **Amazon RDS for MySQL**, **Application Load Balancer**, **Target Group**, **Auto Scaling Group**, **Amazon Route 53**, and **AWS Certificate Manager (ACM)**.
 
----
+-- 
 
 ## 📌 Project Overview
 
