@@ -17,38 +17,30 @@ Application traffic is distributed through an Application Load Balancer, and Aut
 ## 🏗️ AWS Architecture
 
 ```text
-                         🌐 Internet
-                              |
-                              v
-                       Amazon Route 53
-                         DNS Resolution
-                              |
-                              v
-                    AWS Certificate Manager
-                         SSL / HTTPS
-                              |
-                              v
-              Application Load Balancer (ALB)
-                              |
-                              v
-                       Target Group
-                         /       \
-                        /         \
-                       v           v
-                  EC2 Instance  EC2 Instance
-                     LAMP          LAMP
-                  WordPress     WordPress
-                       \           /
-                        \         /
-                         \       /
-                          v     v
-                       Amazon RDS
-                       MySQL Database
+  ## 🏗️ AWS Architecture
 
-                  Auto Scaling Group
-                  ↕ Automatically manages
-                    EC2 instances
-```
+![AWS WordPress Architecture](architecture/aws-wordpress-architecture.png)
+
+### Architecture Flow
+
+```text
+Users
+  ↓
+Route 53
+  ↓
+ACM SSL / HTTPS
+  ↓
+Application Load Balancer
+  ↓
+Target Group
+  ↓
+Auto Scaling Group
+  ↓
+EC2 Instances
+  ↓
+LAMP + WordPress
+  ↓
+Amazon RDS MySQL
 
 ---
 
@@ -118,6 +110,22 @@ The application uses the following LAMP components:
 * ✅ High availability architecture
 
 ---
+## 🔄 RDS Blue/Green Deployment
+
+RDS Blue/Green Deployment was implemented to provide a safer approach for database changes with minimal production disruption.
+
+```text
+Blue Environment
+       ↓
+Replication
+       ↓
+Green Environment
+       ↓
+Testing & Validation
+       ↓
+Switchover
+       ↓
+New Production Environment
 
 ## 🔐 Security
 
